@@ -42,7 +42,7 @@ parser.add_argument('-b', '--batch-size', default=128, type=int,
                     help='mini-batch size (default: 256), this is the total '
                          'batch size of all GPUs on the current node when '
                          'using Data Parallel or Distributed Data Parallel')
-parser.add_argument('--lr', '--learning-rate', default=0.01, type=float,
+parser.add_argument('--lr', '--learning-rate', default=0.001, type=float,
                     metavar='LR', help='initial learning rate', dest='lr')
 parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
                     help='momentum')
@@ -75,10 +75,10 @@ parser.add_argument('--multiprocessing-distributed', action='store_true',
                          'fastest way to use PyTorch for either single node or '
                          'multi node data parallel training')
 
-parser.add_argument('--act_name', default='relu', type=str)
-parser.add_argument('--alpha', default=0, type=float)
-parser.add_argument('--beta', default=0, type=float)
-parser.add_argument('--eps', default=0.7, type=float)
+parser.add_argument('--act_name', default='EELU', type=str)
+parser.add_argument('--alpha', default=0.25, type=float)
+parser.add_argument('--beta', default=1, type=float)
+parser.add_argument('--eps', default=0.1, type=float)
 parser.add_argument('--mode', default='channel-wise', type=str)
 
 
