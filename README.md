@@ -1,1 +1,1 @@
-# EELU
+# Elastic Exponential Linear Unit (EELU)
