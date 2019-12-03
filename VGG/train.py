@@ -86,13 +86,6 @@ parser.add_argument('--mode', default='channel-wise', type=str)
 best_acc1 = 0
 best_acc5 = 0
 
-# act_parm = {'act_name': 'EReLU', 'alpha': 0, 'beta': 0, 'eps': 0.4, 'mode': 'channel-shared'}
-#act_parm = {'act_name': 'EPReLU', 'alpha': 0, 'beta': 0, 'eps': 0.4, 'mode': 'channel-wise'}
-#act_parm = {'act_name':'EMPELU', 'alpha':0.25, 'beta':1, 'eps':0.3, 'bottom_eps':1.0, 'mode':'channel-wise'}
-#act_parm = {'act_name': 'relu', 'alpha': 0, 'beta': 0, 'eps': 0.7, 'mode': 'channel-wise'}
-#act_parm = {'act_name': 'MPELU', 'alpha': 0.25, 'beta': 1, 'eps': 0.9, 'mode': 'channel-wise'}
-#act_parm = {'act_name': 'ELU', 'alpha': 1, 'beta': 1, 'eps': 0.9, 'mode': 'channel-wise'}
-
 
 def main():
     args = parser.parse_args()
